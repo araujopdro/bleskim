@@ -1,0 +1,127 @@
+:root{
+    --main-color:#6d6864;
+    --sec-color: white;
+}
+
+html, body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+    height: 100%;
+    width: 100%;
+}
+#form{
+    background-color: #6d6864;
+}
+body{
+    background-color: #6d6864;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#rodape{
+    max-width: 580px;
+    text-align: justify;
+    background-color: #6d6864;
+}
+
+.form-check-label{
+    color: var(--sec-color);
+    font-weight: lighter;
+    letter-spacing: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.col-form-label{
+    letter-spacing: 0.25rem;
+    color: var(--sec-color);
+}
+
+#rodape{
+    background-color: #6d6864;
+    font-size: 0.8rem;
+    color: var(--sec-color);
+    font-weight: lighter;
+    letter-spacing: 0.25rem;
+}
+
+#email, #nome{
+    padding: 0 0 0 0.5rem;
+    margin: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    border-bottom: 1px solid white !important;
+}
+
+#email:focus, #nome:focus {
+    color: white;
+    background-color: none;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+#email:is(:-webkit-autofill, :autofill), #nome:is(:-webkit-autofill, :autofill) {
+    color: white;
+    background-color: none;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+#btn-submit{
+    background-color: var(--main-color);
+    color: var(--sec-color);
+    border: none;
+    box-shadow: none;
+    border-radius: 1.25rem;
+    letter-spacing: 0.25rem;
+}
+
+#container-container{
+    margin: auto;
+
+    width: 55%;
+
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: inherit;
+}
+
+.iframe-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+}
+
+iframe{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) and (orientation: portrait)  {
+    #container-container{
+        width: 100%;
+        flex-direction: column;
+        padding: 2em;
+    }
+    
+    body{
+        background-color: white;
+        background-position: -110% -7%;
+        background-repeat: no-repeat;
+        background-size: 120%;
+    }
+
+    .iframe-container{
+        width: 100%;
+    }
+}

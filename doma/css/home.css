@@ -1,0 +1,24 @@
+.logo-doma{
+    width: 140px;
+    height: 68px;
+    border-radius: 45px;
+}
+
+.logo-ig{
+    width: 45px;
+    height: 45px;
+}
+
+
+.navbar-text{
+    display: flex;
+    align-items: center ;
+    gap: 24px;
+    justify-content: end;
+}
+
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

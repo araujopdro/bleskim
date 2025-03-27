@@ -1,0 +1,112 @@
+:root{
+    --main-color: white;
+    --sec-color:black;
+}
+
+html, body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#rodape{
+    max-width: 800px;
+}
+
+.form-check-label{
+    color: var(--main-color);
+}
+
+#email, #nome{
+    padding: 0 0 0 0.5rem;
+    margin: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color) !important;
+}
+
+#email:focus, #nome:focus {
+    color: var(--main-color);
+    background-color: none;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+#efeito_form{
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    width: 100%;
+    user-select: none;
+    z-index: -1;
+}
+
+#btn-submit{
+    background-color: transparent;
+    color: white;
+    border: none;
+    box-shadow: none;
+    border-radius: 1.25rem;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}
+
+#container-container{
+    margin: auto;
+
+    width: 55%;
+
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: inherit;
+}
+
+.iframe-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+}
+
+iframe{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) and (orientation: portrait)  {
+    #container-container{
+        width: 100%;
+        flex-direction: column;
+        padding: 2em;
+    }
+    
+    body{
+        background-position: 8%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .iframe-container{
+        width: 100%;
+    }
+
+    #efeito_form{
+        bottom: -2%;
+    }
+    
+}

@@ -1,0 +1,177 @@
+
+
+:root{
+    --main-color: #7d9886;
+    --sec-color:rgb(33, 33, 33);
+}
+
+html, body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#rodape{
+    max-width: 800px;
+}
+
+#logo_title{
+    background-color: #c5d8af;
+    width: 250px;
+    height: 250px;
+    color: #52755d;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.form-check-label{
+    color: var(--main-color);
+}
+
+.form-field{
+    padding: 0 0 0 0.5rem;
+    margin: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.form-field:focus {
+    color: var(--main-color);
+    background-color: none;
+    border: none;
+    border-bottom: 1px solid var(--main-color);
+    outline: 0;
+    box-shadow: none;
+}
+
+#efeito_form{
+    position: absolute;
+    left: 0;
+    transform: translateY(200%);
+    user-select: none;
+    width: 100%;
+    z-index: -1;
+}
+
+#btn-submit, #btn_submit_login{
+    background: var(--main-color);
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#container-container{
+    margin: auto;
+
+    width: 55%;
+
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: inherit;
+}
+
+.iframe-container{
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+}
+
+iframe{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#iframe-container-holder{
+    flex-direction: row;
+}
+
+#iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+#iframe-container iframe{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#iframe-container-chat {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+#iframe-container-chat iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (min-width: 992px) { 
+    #iframe-container-chat iframe{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+@media (orientation: portrait), (max-width: 1200px){
+    #iframe-container-chat {
+        padding-top: 0%;
+    }
+
+    #iframe-container-holder{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) and (orientation: portrait)  {
+    #container-container{
+        width: 100%;
+        flex-direction: column;
+        padding: 2em;
+    }
+    
+    body{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .iframe-container{
+        width: 100%;
+    }
+
+    #efeito_form{
+        bottom: -2%;
+    }
+    
+}

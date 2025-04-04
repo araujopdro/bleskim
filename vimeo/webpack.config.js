@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TerserPlugin = require("terser-webpack-plugin");
 
 
-const project_title = "Vista Cyrela Towermilano"
+const project_title = "Living Grand Village Freguesia"
 const folder = project_title.toLowerCase().replaceAll(" ", "-")
 
 // mode: 'development',
